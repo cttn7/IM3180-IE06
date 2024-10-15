@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Issue Tracker</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src ="assets/images/mouse1.png" alt="mouse1Image">
+                
+
+            </div>
+            <ul>
+                <li><a href="dashboard.html">
+                    <img src ="assets/images/dashboardIcon.png" alt="dashboardIcon">
+                    <span>Dashboard</span>
+                    </a></li>
+                <li><a href="#" onclick="renderChart(event)">
+                    <img src="assets/images/analyzeIcon.png" alt="analyzeIcon">
+                    <span>Analyze</span></a></li>
+                <li><a href="index.html">
+                    <img src="assets/images/homeIcon.png" alt="homeIcon">
+                    <span>Home</span>
+
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Analyze</h1>
+        </div>
+    </section>
+
+    <section id="dashboard">
+        <div class="container">
+            
+            <div >
+                <canvas id="chartContainer" width="400" height="400"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About This Project</h2>
+            <p>This project adresses and focuses on social issues across social media platforms</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Trending Social Issues. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        // JavaScript to hide loading screen after 2 seconds
+        window.onload = function() {
+            renderChart(event)
+        };
+    </script>
+</body>
+</html>
+
